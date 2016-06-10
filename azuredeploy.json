@@ -136,9 +136,9 @@
     "installCDH":"True",
     "addressPrefix":"[parameters('addressPrefix')]",
     "subnetPrefix":"[parameters('subnetPrefix')]",
-    "scriptsUri": "https://raw.githubusercontent.com/stevebelton/manheim/master/cloudera",
-    "share-resourcesUri": "[concat(variables('scriptsUri'), '/shared-resources-', parameters('vnetNewOrExisting'), '-vnet.json?token=ANIOdGMLT1VB8EfN2jfTTelMNtUqukCZks5XY_dqwA%3D%3D')]",
-    "data-nodeUri":"[concat(variables('scriptsUri'), '/data-node-', toLower(subString(parameters('vmSize'), 9, 4)), '.json?token=ANIOdKPpqHDI8_D6qbKq-xGTk6jwBPFhks5XY_e3wA%3D%3D')]",
+    "scriptsUri": "https://raw.githubusercontent.com/stevebelton/fluffy-lamp/master",
+    "share-resourcesUri": "[concat(variables('scriptsUri'), '/shared-resources-', parameters('vnetNewOrExisting'), '-vnet.json')]",
+    "data-nodeUri":"[concat(variables('scriptsUri'), '/data-node-', toLower(subString(parameters('vmSize'), 9, 4)), '.json')]",
     "sa": "[parameters('masterNodeIPAddress')]",
     "ipOctet01": "[concat(split(variables('sa'), '.')[0], '.', split(variables('sa'), '.')[1], '.')]",
     "ipOctet2": "[int(split(variables('sa'), '.')[2])]",
@@ -224,7 +224,7 @@
       "properties": {
         "mode": "Incremental",
         "templateLink": {
-          "uri": "[concat(variables('scriptsUri'), '/master-node.json?token=ANIOdBUVS5_nh72t4N2wTIW8LRc0K6b4ks5XY_fUwA%3D%3D')]",
+          "uri": "[concat(variables('scriptsUri'), '/master-node.json')]",
           "contentVersion": "1.0.0.1"
         },
         "parameters": {
