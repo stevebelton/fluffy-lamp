@@ -1,0 +1,36 @@
+{
+  "$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.1",
+  "parameters": {
+    "storageAccountPrefix": {
+      "value": "cauk0"
+    },
+    "adminPassword": {
+      "value": "$d}Jbc@9%aFMra%>"
+    },
+    "numberOfDataNodes": {
+      "value": 3
+    },
+    "dnsNamePrefix": {
+      "value": "c0xautukcloudera"
+    },
+    "location": {
+      "value": "westeurope"
+    },
+    "storageAccountType": {
+      "value": "Premium_LRS"
+    },
+    "virtualNetworkName": {
+      "value": "corevnet-sub6"
+    },
+    "subnetName": {
+      "value": "cloudera-trusted"
+    },
+    "tshirtSize": {
+      "value": "Eval"
+    },
+    "vmSize": {
+      "value": "Standard_DS14"
+    }
+  }
+}
