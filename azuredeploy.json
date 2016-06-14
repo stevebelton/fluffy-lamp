@@ -106,7 +106,7 @@
     },
     "tshirtSize": {
       "type": "string",
-      "defaultValue": "Eval",
+      "defaultValue": "Prod",
       "allowedValues": [
         "Eval",
         "Prod"
@@ -117,7 +117,7 @@
     },
     "numberOfDataNodes": {
       "type": "int",
-      "defaultValue": 3,
+      "defaultValue": 5,
       "metadata": {
         "description": "Number of data nodes for Prod (defaults to 3)"
       }
@@ -154,7 +154,7 @@
       "highAvailability": "false"
     },
     "clusterTshirtSizeProd": {
-      "masterNodeCount": 3,
+      "masterNodeCount": 2,
       "dataNodeCount": "[parameters('numberOfDataNodes')]",
       "highAvailability": "true"
     },

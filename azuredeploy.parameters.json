@@ -9,7 +9,7 @@
       "value": "$d}Jbc@9%aFMra%>"
     },
     "numberOfDataNodes": {
-      "value": 3
+      "value": 5
     },
     "dnsNamePrefix": {
       "value": "c0xautukcloudera"
@@ -27,7 +27,7 @@
       "value": "cloudera-trusted"
     },
     "tshirtSize": {
-      "value": "Eval"
+      "value": "Prod"
     },
     "vmSize": {
       "value": "Standard_DS14"
