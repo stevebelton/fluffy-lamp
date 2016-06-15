@@ -36,11 +36,11 @@
   "variables": {
     "masterIP":"[parameters('networkSpec').masterIP]",
     "workerIP":"[parameters('networkSpec').workerIP]",
-    "vmName": "[concat(parameters('dnsNamePrefix'), 'dn')]",
-    "nicName": "[concat(variables('vmName'), '-nic')]",
-    "publicIPAddressName": "[concat(variables('vmName'), '-publicIP')]",
-    "storageAccountName": "[concat('dn', parameters('storageAccount').prefix)]",
-    "securityGroupName": "[concat(parameters('dnsNamePrefix'), 'dn-nsg')]"
+    "vmName": "[concat(parameters('dnsNamePrefix'), 'vldedn')]",
+    "nicName": "[concat(parameters('dnsNamePrefix'), 'nidedn')]",
+    "publicIPAddressName": "[concat(parameters('dnsNamePrefix'), 'pidedn')]",
+    "storageAccountName": "[concat(parameters('dnsNamePrefix'), 'sadedn')]",
+    "securityGroupName": "[concat(parameters('dnsNamePrefix'), 'ngdedn')]"
   },
   "resources": [
     {
@@ -190,7 +190,7 @@
       "properties": {
         "publicIPAllocationMethod": "Dynamic",
         "dnsSettings": {
-          "domainNameLabel": "[concat(parameters('dnsNamePrefix'), '-dn', copyIndex())]"
+          "domainNameLabel": "[concat(parameters('dnsNamePrefix'), 'vldedn', copyIndex())]"
         }
       }
     },
