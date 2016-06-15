@@ -163,8 +163,8 @@
       "vmSize": "[parameters('vmSize')]",
       "adminUserName": "[parameters('adminUserName')]",
       "adminPassword": "[parameters('adminPassword')]",
-      "masterNodeASName": "[concat(parameters('dnsNamePrefix'), 'mn-as')]",
-      "dataNodeASName": "[concat(parameters('dnsNamePrefix'), 'dn-as')]"
+      "masterNodeASName": "[concat(parameters('dnsNamePrefix'), 'asmn')]",
+      "dataNodeASName": "[concat(parameters('dnsNamePrefix'), 'asdn')]"
     },
     "networkSpec": {
       "addressPrefix": "[variables('addressPrefix')]",
