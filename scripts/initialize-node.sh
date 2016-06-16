@@ -54,7 +54,7 @@ do
   IP=`atoi ${MASTERIP}`
   let "IP=i+IP"
   HOSTIP=`itoa ${IP}`
-  NODES+=("$HOSTIP:${NAMEPREFIX}-mn$i.$NAMESUFFIX:${NAMEPREFIX}-mn$i")
+  NODES+=("$HOSTIP:${NAMEPREFIX}vldemn$i.$NAMESUFFIX:${NAMEPREFIX}vldemn$i")
 done
 
 let "DATAEND=DATANODES-1"
@@ -63,7 +63,7 @@ do
   IP=`atoi ${WORKERIP}`
   let "IP=i+IP"
   HOSTIP=`itoa ${IP}`
-  NODES+=("$HOSTIP:${NAMEPREFIX}-dn$i.$NAMESUFFIX:${NAMEPREFIX}-dn$i")
+  NODES+=("$HOSTIP:${NAMEPREFIX}vldedn$i.$NAMESUFFIX:${NAMEPREFIX}vldedn$i")
 done
 
 OIFS=$IFS
