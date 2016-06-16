@@ -284,7 +284,7 @@
               "diskSizeGB": "1023",
               "lun": 0,
               "vhd": {
-                "uri": "[concat('http://', variables('storageAccountName'), copyIndex() '.blob.core.windows.net/vhds0/', variables('vmName'), '-datadisk0.vhd')]"
+                "uri": "[concat('http://', variables('storageAccountName'), copyIndex(), '.blob.core.windows.net/vhds0/', variables('vmName'), '-datadisk0.vhd')]"
               },
               "createOption": "Empty"
             },
