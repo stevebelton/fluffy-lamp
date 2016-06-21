@@ -11,6 +11,9 @@
     "numberOfDataNodes": {
       "value": 5
     },
+    "numberOfMasterNodes": {
+      "value": 2
+    },
     "dnsNamePrefix": {
       "value": "caukwedi"
     },
