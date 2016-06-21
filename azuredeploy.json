@@ -161,7 +161,7 @@
       "highAvailability": "false"
     },
     "clusterTshirtSizeProd": {
-      "masterNodeCount": "parameters('numberOfMasterNodes')]",
+      "masterNodeCount": "[parameters('numberOfMasterNodes')]",
       "dataNodeCount": "[parameters('numberOfDataNodes')]",
       "highAvailability": "true"
     },
