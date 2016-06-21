@@ -6,4 +6,8 @@
     <img src="http://azuredeploy.net/deploybutton.png" />
 </a>
 
-Version 2016-06-10
+You can specify the number of data nodes and master nodes in the azuredeploy.parameters.json file now - all nodes are DS14 due to the complicated way Cloudera/MS wrote the original Template and lack of time to fix up on my part ;-)
+
+This deployment does NOT install Cloudera - just builds the infrastructure the same as the Marketplace image.
+
+Version 2016-06-21
